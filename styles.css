@@ -6,6 +6,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #3C92FA;
 }
 
 * {
@@ -14,7 +15,7 @@
     box-sizing: border-box;
     font-family: var(--fonte-principal);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 body {
@@ -27,6 +28,8 @@ body {
     background-image: url(./img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -42,6 +45,7 @@ body {
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
 
 }
 
@@ -61,4 +65,112 @@ body {
 .container__titulo {
     font-size: 28px;
     font-weight: 700;
+}
+
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+    
+}
+
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal)
+}
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin: 5em 10em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+
+.lista__link a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--branco-principal)
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-weight: 300;
+    font-size: 14px;
+    /* margin: 1em 0; */
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
